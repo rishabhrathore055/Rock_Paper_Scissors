@@ -29,28 +29,37 @@ function win(userChoice,computerChoice) {
     computerScore_span.innerHTML = computerScore;
     const smallUserWord = " user".fontsize(4).sub();
     const smallCampWord = " comp".fontsize(4).sub();
+    const userChoice_div = document.getElementById(userChoice);
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallCampWord} You Win!!🔥🎁`;
     document.getElementById(userChoice).classList.add('win-glow'); 
+    setTimeout(()=>document.getElementById(userChoice).classList.remove('win-glow'),300);
 };
 
 function lose(userChoice,computerChoice){
+    const smallUserWord = " user".fontsize(4).sub();
+    const smallCampWord = " comp".fontsize(4).sub();
+    const userChoice_div = document.getElementById(userChoice);
     computerScore++;
     // console.log("User loses");
     // console.log(computerScore);
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    const smallUserWord = " user".fontsize(4).sub();
-    const smallCampWord = " comp".fontsize(4).sub();
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCampWord} You lost...💩`;
-    document.getElementById(userChoice).classList.add('lose-glow');
+    userChoice_div.classList.add('lose-glow');
+    // ES5 Version setTimeout(function(){userChoice_div.classList.remove('lose-glow')},300)
+    setTimeout(()=> userChoice_div.classList.remove('lose-glow'),300)
 
 };
 function tie(userChoice,computerChoice) { 
     const smallUserWord = " user".fontsize(4).sub();
     const smallCampWord = " comp".fontsize(4).sub();
+    
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCampWord} It's a Tie`;
-    document.getElementById(userChoice).classList.add('tie-glow');
+    userChoice_div.classList.add('tie-glow');
+    setTimeout(()=>userChoice_div.classList.remove('tie-glow'),300)
 };
+
+
 
 function game(userChoice){
     const computerChoice = getComputerChoice();
