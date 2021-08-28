@@ -44,7 +44,7 @@ function lose(userChoice,computerChoice){
     // console.log(computerScore);
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCampWord} You lost...💩`;
+    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCampWord} You lost.😒`;
     userChoice_div.classList.add('lose-glow');
     // ES5 Version setTimeout(function(){userChoice_div.classList.remove('lose-glow')},300)
     setTimeout(()=> userChoice_div.classList.remove('lose-glow'),300)
@@ -54,7 +54,7 @@ function tie(userChoice,computerChoice) {
     const smallUserWord = " user".fontsize(4).sub();
     const smallCampWord = " comp".fontsize(4).sub();
     
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCampWord} It's a Tie`;
+    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCampWord} It's a Tie 🤝`;
     userChoice_div.classList.add('tie-glow');
     setTimeout(()=>userChoice_div.classList.remove('tie-glow'),300)
 };

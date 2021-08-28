@@ -57,7 +57,7 @@ color:#ffffff;
     font-weight: bold;
 }
 img {
-    width: 4.5rem;
+    width: 4rem;
     height: auto;
     /* transform: rotate(90deg); */
   }
@@ -72,7 +72,7 @@ img {
 .choice{
     border: 5px solid white;
     border-radius:50%;
-    margin:20px;
+    margin:10px;
     padding: 10px;
     transition: all 0.3ms ease;
 }
@@ -167,6 +167,6 @@ footer>p {
       color: white;
   }
   .fa-github {
-      background: #0a0a0a;
+      background: #242020;
       color: white;
   }
