@@ -2,7 +2,7 @@
 **Classic game ROCK, PAPER, SCISSORS to play in the browser. Built with JavaScript.**
 <div>
 <h3 >Game </h3>
-<img  src="Phone.jpg" alt="DesktopView" width = "30%">
+<img  src="image/game.jpg" alt="DesktopView" width = "30%">
 <div>
 
 ### Tech that Used
