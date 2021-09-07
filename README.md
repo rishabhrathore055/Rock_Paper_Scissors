@@ -10,7 +10,7 @@
 * CSS
 * JavaScript
 ### Project Deplyed Link
-<a href="http://rishabh.study/Rock_Paper_Scissors" target="_blank">Game</a>
+<a href="https://rishabhrathore055.github.io/Rock_Paper_Scissors/" target="_blank">Game</a>
 
 ### Show Your Support
 Give a ⭐ if You Like This Project
